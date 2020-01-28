@@ -26,12 +26,18 @@ public class TestArregloDinamico {
 	@Test
 	public void testArregloDinamico() {
 		// TODO
+		ArregloDinamico ejm=new ArregloDinamico(1);
+		assertEquals("No coincide el tamaño máximo",1,ejm.darCapacidad());
+		assertEquals("No coincide el tamaño actual",0,ejm.darTamano());
+		
 	}
 
 	@Test
 	public void testDarElemento() {
 		setUp2();
 		// TODO
+		assertEquals("No es el resultado esperado","1",arreglo.darElemento(1));
+	
 	}
 
 }
